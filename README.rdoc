@@ -1,28 +1,5 @@
-== README
+StockChaos app tells you about the current market price, average daily volume, dividend features and lot more about the various stocks!!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The StockChaos app make use of stock_quote gem available in Ruby!!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To learn more about this gem, here is the link: https://github.com/tyrauber/stock_quote
