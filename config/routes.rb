@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'my_portfolio', to: "users#my_portfolio"
   root 'welcome#index'
   # Example of regular route:
+  get 'search_stocks', to: "stocks#search"
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
