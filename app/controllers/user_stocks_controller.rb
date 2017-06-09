@@ -70,7 +70,7 @@ class UserStocksController < ApplicationController
   def destroy
     @user_stock.destroy
     respond_to do |format|
-      format.html { redirect_to user_stocks_url, notice: 'User stock was successfully destroyed.' }
+      format.html { redirect_to my_portfolio_path, notice: 'Stock was successfully removed from portfolio.' }
       format.json { head :no_content }
     end
   end
@@ -78,7 +78,7 @@ class UserStocksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_stock
-      @user_stock = UserStock.find(params[:id])
+      @user_stock =current_user.user_stocks.where(stock_id:params[:id]).first
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
