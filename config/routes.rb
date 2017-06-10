@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'search_stocks', to: "stocks#search"
   #   get 'products/:id' => 'catalog#view'
   get 'my_friends', to: "users#my_friends"
+  get 'search_friends', to: "users#search"
+  post 'add_friend', to: "users#add_friend"
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
